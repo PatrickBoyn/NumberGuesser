@@ -22,8 +22,12 @@ guessBtn.addEventListener('click', function(){
     console.log(guess);
 
     if (guess === NaN || guess < min || guess > max) {
-        
+        setMessage(`Please enter a number between ${min} and ${max}`);
     } else {
         
     }
 });
+
+function setMessage(msg) {
+    message.textContent = msg;
+}
