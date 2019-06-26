@@ -3,3 +3,11 @@ let min = 1,
     max = 10,
     winningNumber = 2,
     guessesLeft = 3;
+
+// UI variables
+const game = document.querySelector('#game'),
+    minNumber = document.querySelector('.min-num'),
+    maxNumber = document.querySelector('.max-num'),
+    guessBtn = document.querySelector('#guess-btn'),
+    guessInput = document.querySelector('#guess-input'),
+    message = document.querySelector('.message')
