@@ -17,5 +17,13 @@ minNumber.textContent = min;
 maxNumber.textContent = max;
 
 guessBtn.addEventListener('click', function(){
-    console.log(guessInput);
+    let guess = parseInt(guessInput.value);
+
+    console.log(guess);
+
+    if (guess === NaN || guess < min || guess > max) {
+        
+    } else {
+        
+    }
 });
