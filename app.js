@@ -23,9 +23,7 @@ guessBtn.addEventListener('click', function(){
 
     if (isNaN(guess) || guess < min || guess > max) {
         setMessage(`Please enter a number between ${min} and ${max}`, '#D8000C', '#FFBABA', '1px solid #D8000C');
-    }
-
-    if (guess === winningNumber) {
+    } else if (guess === winningNumber) {
         gameOver(true, 'green');
         setMessage(`${winningNumber} is correct! YOU WIN!`, 'green');
     } else {
