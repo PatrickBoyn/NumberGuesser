@@ -18,7 +18,9 @@ maxNumber.textContent = max;
 
 // Play again event listener
 game.addEventListener('click', function(e){
-    console.log(1);
+    if (e.target.className === 'play-again') {
+        window.location.reload();
+    }
 });
 
 // The guess event listener
