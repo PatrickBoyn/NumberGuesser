@@ -22,13 +22,15 @@ guessBtn.addEventListener('click', function(){
     console.log(guess);
 
     if (isNaN(guess) || guess < min || guess > max) {
-        setMessage(`Please enter a number between ${min} and ${max}`, red);
+        setMessage(`Please enter a number between ${min} and ${max}`, '#D8000C', '#FFBABA', '1px solid #D8000C');
     } else {
         
     }
 });
 
-function setMessage(msg, color) {
-    message.style.color = color
+function setMessage(msg, color, bgcolor, border) {
+    message.style.color = color;
+    message.style.background = bgcolor;
+    message.style.border = border;
     message.textContent = msg;
 }
