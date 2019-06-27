@@ -28,7 +28,7 @@ guessBtn.addEventListener('click', function(){
     }
 });
 
-function setMessage(msg, color, bgcolor, border) {
+function setMessage(msg, color='black', bgcolor='none', border='none') {
     message.style.color = color;
     message.style.background = bgcolor;
     message.style.border = border;
