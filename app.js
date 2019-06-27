@@ -44,6 +44,11 @@ guessBtn.addEventListener('click', function(){
 function gameOver(won, color) {
         guessInput.disabled = true;
         guessInput.style.borderColor = color;
+
+        // Change the text  and behavior of the button on loosing.
+        guessBtn.value = 'Play Again?';
+        guessBtn.className += 'play-again';
+
 }
 
 function setMessage(msg, color='black', bgcolor='none', border='none') {
