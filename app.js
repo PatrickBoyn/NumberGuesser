@@ -37,6 +37,9 @@ guessBtn.addEventListener('click', function(){
             guessInput.disabled = true;
             guessInput.style.borderColor = 'red';
             setMessage(`Game over you lost! The correct number was ${winningNumber}`, 'red','none', '1px solid #D8000C');
+        } else{
+            guessInput.style.borderColor = 'red';
+            setMessage(`${guess} is not correct. You have ${guessesLeft} guesses left.`);
         }
     }
 });
