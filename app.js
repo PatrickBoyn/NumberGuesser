@@ -28,6 +28,7 @@ guessBtn.addEventListener('click', function(){
     if (guess === winningNumber) {
         guessInput.disabled = true;
         guessInput.style.borderColor = 'green';
+        setMessage(`${winningNumber} is correct! YOU WIN!`, 'green');
     } else {
         
     }
