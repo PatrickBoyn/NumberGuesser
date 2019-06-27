@@ -36,7 +36,7 @@ guessBtn.addEventListener('click', function(){
             // Game over
             guessInput.disabled = true;
             guessInput.style.borderColor = 'red';
-            setMessage(`Game over you lost! The correct number was ${winningNumber}`, 'red', '1px ssolid red');
+            setMessage(`Game over you lost! The correct number was ${winningNumber}`, 'red','none', '1px solid #D8000C');
         }
     }
 });
