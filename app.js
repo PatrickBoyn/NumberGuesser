@@ -17,8 +17,8 @@ minNumber.textContent = min;
 maxNumber.textContent = max;
 
 // Play again event listener
-game.addEventListener('mousedown', function(){
-    
+game.addEventListener('click', function(e){
+    console.log(1);
 });
 
 // The guess event listener
