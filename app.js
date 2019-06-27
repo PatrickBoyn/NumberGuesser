@@ -2,7 +2,7 @@
 let min = 1,
     max = 10,
     winningNumber = getWinningNumber(min, max),
-    guessesLeft = 3;
+    guessesLeft = 5;
 
 // UI variables
 const game = document.querySelector('#game'),
@@ -60,7 +60,11 @@ function gameOver(won, color) {
 }
 
 function getWinningNumber(min, max){
-    return Math.floor(Math.random() * (max - min + 1) + min);
+    const test = Math.floor(Math.random() * (max - min + 1) + min);
+    
+    console.log(test);
+
+    return test;
 }
 function setMessage(msg, color='black', bgcolor='none', border='none') {
     message.style.color = color;
