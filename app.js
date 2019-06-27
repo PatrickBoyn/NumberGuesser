@@ -26,7 +26,8 @@ guessBtn.addEventListener('click', function(){
     }
 
     if (guess === winningNumber) {
-        
+        guessInput.disabled = true;
+        guessInput.style.borderColor = 'green';
     } else {
         
     }
