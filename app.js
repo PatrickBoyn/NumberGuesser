@@ -1,7 +1,7 @@
 // Game variables
 let min = 1,
     max = 10,
-    winningNumber = getWinningNumber(),
+    winningNumber = getWinningNumber(min, max),
     guessesLeft = 3;
 
 // UI variables
@@ -59,8 +59,8 @@ function gameOver(won, color) {
 
 }
 
-function getWinningNumber(){
-    
+function getWinningNumber(min, max){
+
 }
 function setMessage(msg, color='black', bgcolor='none', border='none') {
     message.style.color = color;
